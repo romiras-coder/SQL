@@ -22,3 +22,6 @@
 
 Проверим что служба успешно запустилась:
 	sudo service docker status
+
+Запуск docer-conteiner
+    docker-compose -f docker-compose.yml up -d --build
