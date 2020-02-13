@@ -1,4 +1,4 @@
-###Как установить Docker на Linux :
+### Как установить Docker на Linux :
 
 Сначала обновляем существующий перечень пакетов:
 ```
@@ -34,7 +34,7 @@
 ```
 
 
-###Запуск docer-conteiner
+### Запуск docer-conteiner
 ```
     docker-compose -f docker-compose.yml up -d --build
 ```
