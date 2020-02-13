@@ -1,0 +1,6 @@
+[mysqld]
+# My application special configuration
+max_allowed_packet          = 32M
+
+# Accept connections from any IP address
+bind-address	            = 0.0.0.0

@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  db:
+    image: 'mysql:8.0.19'
+    volumes:
+       - './mysql_data:/var/lib/mysql'
+       - './mysql_etc:/etc/mysql/conf.d/'
+    restart: 'always'
+    expose:
+      - '3306'
+    ports:
+      - '3306:3306'
+    environment:
+       MYSQL_ROOT_PASSWORD: '1'
+
+       
+       
