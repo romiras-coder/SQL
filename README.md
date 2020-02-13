@@ -38,3 +38,17 @@
 ```
     docker-compose -f docker-compose.yml up -d --build
 ```
+
+### To change the settings on Dbeaver:
+
+1) Right click your connection, choose "Edit Connection"
+
+2) On the "Connection settings" screen (main screen) click on "Edit Driver Settings"
+3) Click on "Connection properties"
+
+4) Right click the "user properties" area and choose "Add new property"
+
+5) Add two properties: "useSSL" and "allowPublicKeyRetrieval"
+
+6) Set their values to  "useSSL" - "false" and "allowPublicKeyRetrieval" - "true" by double clicking on the "value" column
+    
