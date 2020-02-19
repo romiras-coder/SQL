@@ -4,15 +4,41 @@ services:
   db:
     image: 'mysql:8.0.19'
     volumes:
-       - './mysql_data:/var/lib/mysql'
-       - './mysql_etc:/etc/mysql/conf.d/'
+      - './mysql_data:/var/lib/mysql'
+      - './mysql_etc:/etc/mysql/conf.d/'
     restart: 'always'
     expose:
       - '3306'
     ports:
       - '3306:3306'
     environment:
-       MYSQL_ROOT_PASSWORD: '1'
+      MYSQL_ROOT_PASSWORD: '!QAZ2wsx'
+#  mssql:
+#    image: 'mcr.microsoft.com/mssql/server:2017-latest'
+#    volumes:
+#      - 'mssql_data:/var/opt/mssql'
+#    restart: 'always'
+#    expose:
+#      - '1433'
+#    ports:
+#      - '1433:1433'
+#    environment:
+#      ACCEPT_EULA: 'Y'
+#      SA_PASSWORD: '!QAZ2wsx'
+#  firebird-2.5:
+#    image: 'almeida/firebird:2.5'
+#    volumes:
+#      - './firebird/backup:/var/lib/firebird/2.5/backup/'
+#      - './firebird/data:/var/lib/firebird/2.5/data/'
+#    restart: 'always'
+#    expose:
+#      - '3050'
+#    ports:
+#      - '3050:3050'
+#
+#volumes:
+#  mssql_data:
+
 
        
        

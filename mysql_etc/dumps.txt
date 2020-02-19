@@ -1,0 +1,13 @@
+# делаем дам БД
+mysqldump -u root -p example > /var/lib/mysql/example-dump.sql
+
+/* Удаляем базу если она существует */
+DROP DATABASE IF EXISTS simple;
+/* Создаем базу данных simple */
+CREATE DATABASE simple;
+USE simple;
+
+# Восстанавливаем БД в новую
+mysql -u root -p simple < /var/lib/mysql/example-dump.sql
+# Выборка TOP 100 users
+mysql -e "select * from users limit 100" -u root -p!QAZ2wsx simple > var/lib/mysql/simple-top100.txt
